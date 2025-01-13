@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
+import Image from 'next/image'
 
 export default function FinalCTA() {
   return (
@@ -18,7 +19,9 @@ export default function FinalCTA() {
           </div>
           <div className="md:w-1/2">
             {/* Add AI talent demo video here */}
-            <div className="bg-gray-300 w-full h-64 rounded-lg">AI Talent Demo Video</div>
+            <div className="bg-gray-300 w-full h-auto rounded-lg">
+              <Image src='/features02.gif' alt="今すぐ始めましょう" width={500} height={300} className="rounded-lg shadow-lg w-full" />
+            </div>
           </div>
         </div>
       </div>
