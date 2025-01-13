@@ -2,6 +2,9 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import Image from 'next/image'
 
+import nextConfig from "../../next.config.mjs";
+const BASE_PATH = nextConfig.basePath || "";
+
 export default function FinalCTA() {
   return (
     <section className="py-20 bg-primary text-primary-foreground">
@@ -20,7 +23,7 @@ export default function FinalCTA() {
           <div className="md:w-1/2">
             {/* Add AI talent demo video here */}
             <div className="bg-gray-300 w-full h-auto rounded-lg">
-              <Image src='/features02.gif' alt="今すぐ始めましょう" width={500} height={300} className="rounded-lg shadow-lg w-full" />
+              <Image src={`${BASE_PATH}features02.gif`} alt="今すぐ始めましょう" width={500} height={300} className="rounded-lg shadow-lg w-full" />
             </div>
           </div>
         </div>

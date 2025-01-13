@@ -2,11 +2,14 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import Image from 'next/image'
 
+import nextConfig from "../../next.config.mjs";
+const BASE_PATH = nextConfig.basePath || "";
+
 export default function Hero() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <Image
-        src="/hero.png"
+        src={`${BASE_PATH}hero.png`}
         alt="AI Talent Background"
         fill
         style={{ objectFit: 'cover' }}

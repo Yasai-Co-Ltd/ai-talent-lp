@@ -1,6 +1,9 @@
 import Image from 'next/image'
 import { Star } from 'lucide-react'
 
+import nextConfig from "../../next.config.mjs";
+const BASE_PATH = nextConfig.basePath || "";
+
 const testimonials = [
   {
     name: '山田太郎',
@@ -34,7 +37,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-card rounded-lg shadow-lg p-6 text-card-foreground">
               <div className="flex items-center mb-4">
-                <Image src={testimonial.image} alt={testimonial.name} width={60} height={60} className="rounded-full mr-4" />
+                <Image src={`${BASE_PATH}${testimonial.image}`} alt={testimonial.name} width={60} height={60} className="rounded-full mr-4" />
                 <div>
                   <h3 className="font-semibold">{testimonial.name}</h3>
                   <p className="text-sm text-gray-600">{testimonial.company}</p>

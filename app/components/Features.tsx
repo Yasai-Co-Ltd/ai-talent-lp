@@ -1,5 +1,8 @@
 import Image from 'next/image'
 
+import nextConfig from "../../next.config.mjs";
+const BASE_PATH = nextConfig.basePath || "";
+
 const features = [
   {
     title: 'リアルに近いAIタレント',
@@ -29,7 +32,7 @@ export default function Features() {
         {features.map((feature, index) => (
           <div key={index} className={`flex flex-col ${feature.reverse ? 'md:flex-row-reverse' : 'md:flex-row'} items-center mb-20`}>
             <div className="w-full md:w-1/2 mb-8 md:mb-0">
-              <Image src={feature.image} alt={feature.title} width={500} height={300} className="rounded-lg shadow-lg w-full" />
+              <Image src={`${BASE_PATH}${feature.image}`} alt={feature.title} width={500} height={300} className="rounded-lg shadow-lg w-full" />
             </div>
             <div className="w-full md:w-1/2 md:px-8">
               <h3 className="text-2xl md:text-3xl font-bold mb-4">{feature.title}</h3>
