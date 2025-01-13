@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <Image
-        src={`${BASE_PATH}hero.png`}
+        src={`${BASE_PATH}/hero.png`}
         alt="AI Talent Background"
         fill
         style={{ objectFit: 'cover' }}
