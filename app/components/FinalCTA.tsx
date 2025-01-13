@@ -23,7 +23,7 @@ export default function FinalCTA() {
           <div className="md:w-1/2">
             {/* Add AI talent demo video here */}
             <div className="bg-gray-300 w-full h-auto rounded-lg">
-              <Image src={`${BASE_PATH}features02.gif`} alt="今すぐ始めましょう" width={500} height={300} className="rounded-lg shadow-lg w-full" />
+              <Image src={`${BASE_PATH}/features02.gif`} alt="今すぐ始めましょう" width={500} height={300} className="rounded-lg shadow-lg w-full" />
             </div>
           </div>
         </div>
