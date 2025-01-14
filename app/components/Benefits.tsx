@@ -1,28 +1,30 @@
-import { Clock, DollarSign, Zap } from 'lucide-react'
+import { PiggyBank, PersonStanding, Clapperboard } from "lucide-react";
 
 const benefits = [
   {
-    icon: <Clock className="w-12 h-12 mb-4" />,
-    title: 'AIタレントを格安で',
-    description: 'AIタレントを活用することで、従来のタレント起用と比べて大幅な時間とコスト削減が可能です。'
+    icon: <PiggyBank className="w-12 h-12 mb-4" />,
+    title: "大幅コスト削減",
+    description: "AIタレント導入でタレント起用費用を最大70%削減",
   },
   {
-    icon: <Zap className="w-12 h-12 mb-4" />,
-    title: 'ハイクオリティなAIタレント',
-    description: 'AIのプロが生成したハイクオリティなAIタレントが利用可能。'
+    icon: <PersonStanding className="w-12 h-12 mb-4" />,
+    title: "独自性を強化",
+    description: "1オーナー制で、完全オリジナルなAIキャラクターを作成",
   },
   {
-    icon: <DollarSign className="w-12 h-12 mb-4" />,
-    title: '1オーナー制で他社と被らない',
-    description: '1タレントにつき1社のみの販売なので、御社だけの専属AIタレントになります。'
-  }
-]
+    icon: <Clapperboard className="w-12 h-12 mb-4" />,
+    title: "拡張性",
+    description: "動画、SNS投稿など幅広い活用が可能",
+  },
+];
 
 export default function Benefits() {
   return (
     <section className="py-20 bg-card text-card-foreground">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">そのお悩み、AIタレントで解決！</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          AIタレントなら、これらのお悩みを全て解決します！
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
             <div key={index} className="text-center">
@@ -34,6 +36,5 @@ export default function Benefits() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
