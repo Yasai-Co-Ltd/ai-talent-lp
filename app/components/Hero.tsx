@@ -12,22 +12,26 @@ export default function Hero() {
         src={`${BASE_PATH}/hero.png`}
         alt="AI Talent Background"
         fill
-        style={{ objectFit: "cover" }}
+        style={{ objectFit: "cover", objectPosition: "right" }}
         priority
       />
       <div className="absolute inset-0 bg-white bg-opacity-50"></div>
       <div className="relative z-10 text-center text-black px-4">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          御社専属のAIタレントで、マーケティングを次のステージへ。業界初の1オーナー制で、唯一無二のブランド体験を実現。
+        <h1 className="text-2xl md:text-5xl font-bold mb-6 md:leading-relaxed">
+          専属のAIタレントで、
+          <br />
+          マーケティングを次のステージへ。
         </h1>
-        <p className="text-xl md:text-2xl mb-8">
-          AI技術でタレント起用のコストを削減し、顧客エンゲージメントを飛躍的に向上。専属AIタレントを今すぐ体験。
+        <p className="text-xl md:text-xl mb-8">
+          業界初の1オーナー制で、唯一無二のブランド体験を実現。
+          <br />
+          AI技術でタレント起用のコストを削減し、顧客エンゲージメントをアップ！
         </p>
         <div className="max-w-md mx-auto">
           <form className="flex flex-col md:flex-row justify-center">
             <Button
               type="submit"
-              className="bg-primary text-primary-foreground hover:bg-primary/90"
+              className="text-xl py-6 px-10 bg-primary text-primary-foreground hover:bg-primary/90"
             >
               今すぐお問い合わせ
             </Button>
