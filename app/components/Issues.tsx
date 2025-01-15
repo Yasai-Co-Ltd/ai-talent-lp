@@ -8,7 +8,7 @@ const issues = [
   {
     icon: (
       <Image
-        src={`${BASE_PATH}issues01.png`}
+        src={`${BASE_PATH}/issues01.png`}
         alt="Issue Icon"
         width={100}
         height={100}
@@ -22,7 +22,7 @@ const issues = [
   {
     icon: (
       <Image
-        src={`${BASE_PATH}issues02.png`}
+        src={`${BASE_PATH}/issues02.png`}
         alt="Issue Icon"
         width={100}
         height={100}
@@ -35,7 +35,7 @@ const issues = [
   {
     icon: (
       <Image
-        src={`${BASE_PATH}issues03.png`}
+        src={`${BASE_PATH}/issues03.png`}
         alt="Issue Icon"
         width={100}
         height={100}
